@@ -1,6 +1,6 @@
 ﻿namespace listtypelibrary
 {
-    internal interface ILinkedList
+    internal interface ILinkedList<T>
     {
     }
 }

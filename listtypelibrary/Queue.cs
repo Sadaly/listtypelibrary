@@ -1,6 +1,7 @@
 ﻿namespace listtypelibrary
 {
-    internal class Queue
+    internal class Queue<T>
+        where T : struct
     {
     }
 }
