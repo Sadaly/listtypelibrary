@@ -8,9 +8,9 @@
         bool Contains(T item);
         bool Exists(Predicate<T> predicate);
         T Find(Predicate<T> predicate);
-        T FindAll(Predicate<T> predicate);
+        T[] FindAll(Predicate<T> predicate);
         T FindLast(Predicate<T> predicate);
-        int FindAllIndex(Predicate<T> predicate);
+        int[] FindAllIndex(Predicate<T> predicate);
         int FindIndex(Predicate<T> predicate);
         int FindLastIndex(Predicate<T> predicate);
         int IndexOf(T item);

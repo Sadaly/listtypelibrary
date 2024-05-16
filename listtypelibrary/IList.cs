@@ -1,11 +1,11 @@
 ﻿namespace listtypelibrary
 {
-    internal interface IList<T>: ISearch<T>, ICopy<T>
+    internal interface IList<T>: ISearch<T>, ICopy<T>, IEnumerable<T>
     {
         void Add(T item);
         void AddRange(IEnumerable<T> collection);
         void Clear();
-        bool Equals(object obj);
+        bool Equals(IList<T> list);
         void Insert(int index, T item);
         void InsertRange(int index, IEnumerable<T> range);
         void Remove(T item);
